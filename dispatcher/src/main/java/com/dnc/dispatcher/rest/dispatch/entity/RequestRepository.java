@@ -21,5 +21,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface RequestRepository extends JpaRepository<Request, Integer> {
 	boolean existsByDispatcherAndStatusIn(String dispatcher, List<String> status);
 	boolean existsByRequesterAndStatusIn(String requester, List<String> status);
-	boolean existsByStatusIn(String requester, List<String> status);
 }
